@@ -73,6 +73,51 @@ class User {
 }
 ```
 
+## Example
+
+Controller
+
+```php
+namespace Framework\Controller;
+
+use Framework\Model\User;
+
+class User {
+    
+    private $model;
+
+    public function __construct()
+    {
+        $this->model = new Model;
+    }
+
+    public function view($id)
+    {
+        $user = $this->model->find($id);
+
+        // now use template engine (e.g. Twig) to display user profile with data
+    }
+    
+}
+```
+
+Model
+
+```php
+namespace Framework\Model;
+
+use Framework\Provider\Database;
+
+class User {
+
+    public function find($id)
+    {
+        return $this->query('select * from user where id = ?', $id);
+    }
+    
+}
+```
+
 ## Dependencies
 
 PHP >= 5.4.0
