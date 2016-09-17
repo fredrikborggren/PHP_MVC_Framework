@@ -1,0 +1,15 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+
+body {
+    padding: 20px;
+}
+
+.form-login {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-login p {
+    padding: 20px;
+    margin-bottom: 20px;
+}
