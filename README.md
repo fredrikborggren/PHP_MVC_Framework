@@ -108,7 +108,7 @@ namespace Framework\Model;
 
 use Framework\Provider\Database;
 
-class User {
+class User extend Database {
 
     public function find($id)
     {
