@@ -75,6 +75,15 @@ class User {
 
 ## Example
 
+Routing
+
+```php
+$this->router->get('/user/:id', function($id) {
+    $user = new Controller\User;
+    $user->view($id);
+});
+```
+
 Controller
 
 ```php
